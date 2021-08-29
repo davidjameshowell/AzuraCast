@@ -5,4 +5,4 @@ set -x
 
 apt-get update
 
-$minimal_apt_get_install beanstalkd
+$minimal_apt_get_install --force-yes beanstalkd
