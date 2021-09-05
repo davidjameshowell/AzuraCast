@@ -3,7 +3,7 @@ set -e
 source /bd_build/buildconfig
 set -x
 
-ARCH=$(uname -r)
+ARCH=$(uname -a)
 SUB="aarch64"
 
 DOCKERIZE_ARCH="amd64"
