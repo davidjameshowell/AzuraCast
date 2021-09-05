@@ -14,6 +14,8 @@ if grep -q "$SUB" <<< "$ARCH"; then
   DOCKERIZE_ARCH="armhf"
 fi
 
+echo "Dockerize arch is set to ${DOCKERIZE_ARCH}"
+
 wget https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-linux-${DOCKERIZE_ARCH}-${DOCKERIZE_VERSION}.tar.gz
 tar -C /usr/local/bin -xzvf dockerize-linux-${DOCKERIZE_ARCH}-${DOCKERIZE_VERSION}.tar.gz
 rm dockerize-linux-${DOCKERIZE_ARCH}-${DOCKERIZE_VERSION}.tar.gz
