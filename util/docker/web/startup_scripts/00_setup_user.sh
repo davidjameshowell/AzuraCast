@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt install beanstalkd -y
+pkill beanstalkd
 
 PUID=${PUID:-1000}
 PGID=${PGID:-1000}
